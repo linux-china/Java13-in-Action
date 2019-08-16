@@ -13,8 +13,9 @@ Java 13
 * 353:	Reimplement the Legacy Socket API
 
      * More maintainable & modern implementation
-     * Not using stack as I/O buffer
+     * Not using stack as I/O buffer, Using NIO native code
      * Ready for new Java Concurrency Models. Fiber
+     * 123% better performance than old
   
 * 354:	Switch Expressions (Preview)
 

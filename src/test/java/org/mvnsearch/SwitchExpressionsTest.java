@@ -13,7 +13,20 @@ public class SwitchExpressionsTest {
 
     @Test
     public void testArrayLabels() {
-        System.out.println(workWeekDays(DayOfWeek.FRIDAY));
+        //legacy
+        switch (DayOfWeek.FRIDAY) {
+            case MONDAY: {
+                System.out.println(1);
+                break;
+            }
+            case WEDNESDAY: {
+                System.out.println(2);
+                break;
+            }
+            default: {
+                System.out.println("Unknown");
+            }
+        }
         //Arrow labels
         switch (DayOfWeek.FRIDAY) {
             case MONDAY, FRIDAY, SUNDAY -> System.out.println(6);

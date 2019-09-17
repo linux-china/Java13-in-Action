@@ -15,7 +15,7 @@ public class TextBlockTest {
         //language=html
         String htmlTemplate = """
                <span style="color: green">Hello %s</span>""";
-        System.out.println(htmlTemplate.formatted(nick));
+        System.out.println(String.format(htmlTemplate, nick));
         //language=json
         String cleanJsonText = """
                {"id": 1, "nick": "leijuan"}""";
